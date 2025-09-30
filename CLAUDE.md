@@ -48,7 +48,7 @@ The complete user workflow is defined in `docs/PRD.md` §1.2:
 **Input Validation & Format**:
 - **Validation Rules**:
   - "예약자 성함": Non-empty string (Korean, English, spaces allowed)
-  - "휴대폰 뒤4자리": Exactly 4 digits (regex: `^\d{4}$`)
+  - "휴대폰 뒤4자리": Exactly 4 digits (regex: `1234`)
   - Validation failure → show error dialog, do NOT proceed
 - **Combined Format**: `{성함}{뒤4자리}` (no separators between fields)
   - Example: "홍길동" + "1234" → `홍길동1234`
